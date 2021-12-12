@@ -1,0 +1,81 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ccc;
+  text-align: center;
+}
+
+
+@font-face {
+  font-family: "D7CR";
+  src: url("DSEG7Classic-Regular.woff") format('woff');
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.game-score {
+  font-family: D7CR;
+}
+.game-table {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.game-table tr {
+  display: flex;
+  justify-content: center;
+}
+.game-table tr td {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  text-align: middle;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #eee #eee #666 #666;
+}
+
+.game-table tr td.is-unrevealed {
+  background-color: #eee;
+  
+}
+
+.game-table tr td.is-revealed {
+  background-color: #aaa;
+  border-color: #aaa;
+  outline: 1px solid #666;
+  font-weight: bold;
+  text-align: center;
+}
+.game-table tr td.is-revealed.is-mine {
+  background-color: #f00;
+  border-color: #f00;
+}
+
+.game-table tr td.is-revealed.is-1 {
+  color: blue;
+}
+.game-table tr td.is-revealed.is-2 {
+  color: green;
+}
+.game-table tr td.is-revealed.is-3 {
+  color: red;
+}
+.game-table tr td.is-revealed.is-4 {
+  color: indigo;
+}
